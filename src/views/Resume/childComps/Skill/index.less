@@ -1,0 +1,14 @@
+.skills {
+  padding-left: var(--left-padding);
+
+  .skill {
+    font-size: var(--f-size-a);
+    transition: all 0.35s calc(var(--a) * 0.05s);
+
+    &.hide {
+      transition: all 0s;
+      transform: translateX(250px);
+      opacity: 0;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  overflow: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+a {
+  /* 禁用手机端长按页面弹出菜单 */
+  -webkit-touch-callout: none;
+}
+
+button,
+input,
+select,
+textarea {
+  border: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+input:focus {
+  border: none;
+}
+
+textarea {
+  /* 禁止用户拖拽文本域 */
+  resize: none;
+}
+
+textarea::-webkit-scrollbar {
+  /* 隐藏滚动条但能滚动 */
+  display: none;
+}
+
+input {
+  /* 在移动端iOS加上这个属性才能修改input样式 */
+  appearance: none;
+}
+
+label {
+  margin-bottom: 0;
+}

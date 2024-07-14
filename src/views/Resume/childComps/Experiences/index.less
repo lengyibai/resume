@@ -1,0 +1,28 @@
+.experiences {
+  padding-left: var(--left-padding);
+  font-size: var(--f-size-a);
+
+  .exp {
+    margin-bottom: 15px;
+    transition: all var(--time-750);
+
+    &.hide {
+      transition: all 0s;
+      transform: translateY(100px) scale(1.5);
+      opacity: 0;
+    }
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+
+      .label {
+        font-weight: 900;
+      }
+
+      @media screen and (max-width: @small) {
+        flex-direction: column;
+      }
+    }
+  }
+}
